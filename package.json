@@ -1,0 +1,38 @@
+{
+  "name": "airbnb",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "css:dev": "TAILWIND_MODE=watch postcss ./styles/tailwind.css -o ./styles/globals.css --watch",
+    "css:build": "postcss ./styles/tailwind.css -o ./styles/globals.css"
+  },
+  "dependencies": {
+    "@badrap/bar-of-progress": "^0.1.2",
+    "@heroicons/react": "^1.0.5",
+    "@types/react-date-range": "^1.4.1",
+    "@types/wojtekmaj__react-datetimerange-picker": "^3.0.2",
+    "@wojtekmaj/react-daterange-picker": "^3.3.2",
+    "date-fns": "^2.27.0",
+    "geolib": "^3.3.3",
+    "next": "12.0.7",
+    "react": "^17.0.2",
+    "react-date-range": "^1.4.0",
+    "react-dom": "17.0.2",
+    "react-map-gl": "^6.1.18",
+    "tailwind-scrollbar-hide": "^1.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.12",
+    "@types/react": "^17.0.37",
+    "autoprefixer": "^10.4.0",
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7",
+    "postcss": "^8.4.4",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.19",
+    "typescript": "4.5.2"
+  }
+}
