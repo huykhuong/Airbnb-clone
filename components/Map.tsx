@@ -36,14 +36,13 @@ const Map: React.FC<MapProps> = (props) => {
     latitude: result.lat,
   }));
 
-  const center: false | { longitude: number; latitude: number } =
-    getCenter(coordinates);
+  const center: any = getCenter(coordinates);
 
   const [viewport, setViewport] = useState<IViewPort>({
     width: "100%",
     height: "100%",
-    latitude: center?.latitude,
-    longitude: center?.longitude,
+    latitude: center.latitude,
+    longitude: center.longitude,
     zoom: 11,
   });
 
